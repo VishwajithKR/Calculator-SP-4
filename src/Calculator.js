@@ -13,12 +13,11 @@ function Calculator() {
     }
 
     const backspace = () => {
-        setResult(result.slice(0, result.length - 1))
+        setResult(result.slice(0, result.length - 1));
     }
 
     const finalResult = () => {
         try {
-            // alert("kk")
             setResult(eval(result).toString())
         } catch (error) {
             setResult("Error")
