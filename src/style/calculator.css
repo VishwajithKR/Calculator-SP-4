@@ -1,0 +1,125 @@
+.bg-pic {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/green-screen.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    justify-content: center;
+    text-align: center;
+}
+
+.box {
+    /* background-color: rgba(246, 247, 246, 0.777); */
+    /* backdrop-filter: blur(3px); */
+    padding: 1%;
+    border-radius: 15px;
+    /* border: 5px solid white; */
+    position: absolute;
+    top: 50%;
+    left: 30.5%;
+    rotate: -0.8deg;
+    width: auto;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    align-items: center;
+    justify-content: center;
+}
+
+.keyboard {
+    width: 380px;
+    display: grid;
+    padding: 0px 5px 0px 5px;
+    gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(60px, auto);
+
+}
+
+#clear {
+    grid-column: span 2;
+    background-image: linear-gradient(#e8e1e0, #5ca755);
+
+}
+
+.equal {
+    grid-row: span 2;
+}
+
+.result {
+    background-image: linear-gradient(#e8e1e0, #5ca755);
+
+}
+
+input[type=text] {
+    color: black;
+    height: 63px;
+    width: 96%;
+    cursor: not-allowed;
+    margin: 0px 0px 15px;
+    letter-spacing: 5px;
+    border-radius: 10px;
+    
+    align-items: center;
+    background-color: #e3e7ea;
+    font-family: calculator;
+    text-align: end;
+    font-weight: 700;
+    padding:0px 8px 10px 2px;
+    font-size: 35px;
+    border: 5px solid #7dcbee;
+    box-shadow: inset 4px 4px 4px #e7edf0, inset -4px -4px 4px #dce1e3, 4px 4px 4px #7dcbee;
+    outline: none;
+}
+
+.delete {
+    background-image: linear-gradient(#e8e1e0, #a75a55);
+}
+
+button {
+    display: grid;
+    place-items: center;
+    background-image: linear-gradient(#e8e1e0, #555da7);
+
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px .2px #00000035;
+    border: 1px solid rgba(0, 0, 0, 0);
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.symbol {
+    background-image: linear-gradient(#f0efe2, #eab73a)
+}
+
+button {
+    font-family: number;
+    font-size: 25px;
+    font-weight: 900;
+    color: rgb(35, 35, 35);
+}
+
+button:active {
+    box-shadow: inset 4px 4px 5px #bcbcbc, inset -4px -4px 5px #bcbcbc, 2px 2px 5px 3px white, -2px -2px 5px 3px white;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+
+@media  only screen and (max-width:440px) {
+    .box {
+        background-color: rgb(246 247 246 / 93%);
+        backdrop-filter: blur(3px);
+        padding: 1%;
+        border-radius: 15px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        rotate: 0deg;
+        transform: translate(-50%, -50%);
+    }
+    .bg-pic {
+        width: 100%;
+        height: 93vh;
+        background-image: url(../images/green-screen\(1\).jpg);
+    }
+}
